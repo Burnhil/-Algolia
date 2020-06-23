@@ -6,16 +6,16 @@ const ResultsList = (props) => {
 
     if(props.result !== null){
 
-    let titleJSX = <li>{props.results.title}</li>;
-    let authorJSX = <li>{props.results.author}</li>;
-    let createdJSX = <li>{props.results.created_at}</li>;
-    let urlJSX = <li>{props.results.url}</li>;
+    let titleJSX = <li>{`Title: ${props.results.title}`}</li>;
+    let authorJSX = <li>{`Author: ${props.results.author}`}</li>;
+    let createdJSX = <li>{`Published Date: ${props.results.created_at}`}</li>;
+    let urlJSX = <li>{`URL: ${props.results.url}`}</li>;
 
-    resultListJSX = <ul><header>Search Results</header>
+    resultListJSX = <ul><header className="formButton">Article Results</header>
     <ul>{titleJSX}</ul>
     <ul>{authorJSX}</ul>
     <ul>{createdJSX}</ul>
-    <ul> href={urlJSX}</ul>
+    <ul> {urlJSX}</ul>
     </ul>
     }
 

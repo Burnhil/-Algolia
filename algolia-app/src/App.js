@@ -78,7 +78,7 @@ class App extends Component {
       <div className="App">
 
         {/** your form will want to go to a different page for submission, don't let it. */}
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="formButton">
         {/** within the form element, you will include your various input elements */}
         <label>Name: <input value = {this.state.value} type="text" onChange={this.handleChange}/></label>
         <input type="submit" value="click to submit"/>  
